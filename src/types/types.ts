@@ -1,7 +1,9 @@
 export interface currentLocationDataResponse {
   temp_c: number;
   wind_kph: number;
-  condition: ConditionCurrentLocation
+  condition: ConditionCurrentLocation;
+  uv:number;
+  is_day:number;
 }
 
 export interface LocationDataResponse {
