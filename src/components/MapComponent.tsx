@@ -5,10 +5,10 @@ import 'leaflet/dist/leaflet.css';
 const MapComponent: React.FC<{ lat: number; lon: number; city: string }> = ({ lat, lon, city }) => {
     return (
         <div className='lg:w-[50%] h-[200px] lg:h-auto'>
-            <MapContainer 
-                key={`${lat}-${lon}`} // Cambiará cada vez que las coordenadas cambien
-                center={[lat, lon]} 
-                zoom={13} 
+            <MapContainer
+                key={`${lat}-${lon}`}
+                center={[lat, lon]}
+                zoom={13}
                 style={{ height: "100%", width: "100%" }}
             >
                 <TileLayer

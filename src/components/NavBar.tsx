@@ -2,6 +2,7 @@ import React from "react";
 import { NavBarProps } from "../types/component_types";
 import { IoSearchOutline } from "react-icons/io5";
 import { MdDelete } from "react-icons/md";
+import { CiCloudRainbow } from "react-icons/ci";
 
 const NavBar: React.FC<NavBarProps> = ({ props: { handleSearch, fetchData, locationSearch, resetSearch } }) => {
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -12,8 +13,9 @@ const NavBar: React.FC<NavBarProps> = ({ props: { handleSearch, fetchData, locat
 
   return (
     <nav className="fixed items-center top-0 py-5 flex w-full bg-teal-900 px-2 justify-between lg:px-10">
-      <figure className="margin-0 font-bold lg:text-[30px] cursor-pointer">
+      <figure className="margin-0 flex items-center gap-3 font-bold lg:text-[30px] cursor-pointer">
         WeatherApp
+        <CiCloudRainbow size={50}/>
       </figure>
       <div className="flex w-52 lg:w-auto items-center relative">
         <input
