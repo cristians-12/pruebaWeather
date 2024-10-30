@@ -19,7 +19,7 @@ const App = () => {
 
       <div className='lg:flex lg:w-[80%] lg:h-[60%]'>
         <DataHeroLocation dataFetch={dataFetch} />
-        {dataFetch && <MapComponent lat={dataFetch.location.lat} lon={dataFetch.location.lon} city={dataFetch.location.name} />}
+        {dataFetch ? <MapComponent lat={dataFetch.location.lat} lon={dataFetch.location.lon} city={dataFetch.location.name} /> : null}
       </div>
       <ToastContainer />
       <CurveSvg />

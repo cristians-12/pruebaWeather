@@ -14,6 +14,7 @@ WeatherApp es una aplicación web que permite a los usuarios buscar y visualizar
 - [Tailwind CSS](https://tailwindcss.com/): Framework CSS para diseño de estilos personalizados.
 - [TypeScript](https://www.typescriptlang.org/): Para un desarrollo más seguro y escalable.
 - [LeafLet](https://leafletjs.com): Para mostrar ubicacion del mapa haciendo uso de la latitud, longitud y nombre.
+- [Framer Motion](https://www.framer.com/motion/): Para realizar animaciones.
 
 
 ## Instalación
