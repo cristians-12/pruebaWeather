@@ -10,7 +10,7 @@ const useFetch = () => {
 
     const fetchData = async (location: string) => {
         if (location == '' || location == null) {
-            notify('Debes ingresar una ciudad')
+            notify('Debes ingresar una ciudad para buscar informacion.')
         } else {
             const response = await fetch(`${apiUrl}&q=${location}&aqi=no`);
             const data = await response.json();
