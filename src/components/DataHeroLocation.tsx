@@ -26,7 +26,7 @@ const DataHeroLocation: React.FC<{ dataFetch?: WeatherDataResponse }> = ({ dataF
                             <p><span className='font-bold'>Ubicación:</span> {dataFetch.location.region}, {dataFetch.location.country}</p>
                             <p className='mt-3'><span className='font-bold'>Fecha y hora local:</span> {dataFetch.location.localtime}</p>
                             <div className='flex items-center mt-10 justify-center'>
-                                {dataFetch.current.is_day == 1 ? <WiDayHaze size={150} color='yellow' /> : <FaMoon size={100} />}
+                                {dataFetch.current.is_day === 1 ? <WiDayHaze size={150} color='yellow' /> : <FaMoon size={100} />}
                             </div>
                         </div>
                         <div className='flex flex-col items-ce'>

@@ -3,5 +3,6 @@ export interface NavBarProps {
     handleSearch: (e: React.ChangeEvent<HTMLInputElement>) => void;
     fetchData: (location: string) => void;
     locationSearch: string | undefined | null;
+    resetSearch: () => void;
   };
 }

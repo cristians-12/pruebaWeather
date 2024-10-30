@@ -9,11 +9,16 @@ const useClientData = () => {
         setLocationSearch(e.target.value)
     }
 
+    const resetSearch = ()=>{
+        setLocationSearch('')
+    }
+
 
     return (
         {
             locationSearch,
-            handleSearch
+            handleSearch,
+            resetSearch
         }
     )
 }

@@ -1,8 +1,9 @@
 import React from "react";
 import { NavBarProps } from "../types/component_types";
 import { IoSearchOutline } from "react-icons/io5";
+import { MdDelete } from "react-icons/md";
 
-const NavBar: React.FC<NavBarProps> = ({ props: { handleSearch, fetchData, locationSearch } }) => {
+const NavBar: React.FC<NavBarProps> = ({ props: { handleSearch, fetchData, locationSearch, resetSearch } }) => {
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       fetchData(locationSearch ?? '');
@@ -21,13 +22,14 @@ const NavBar: React.FC<NavBarProps> = ({ props: { handleSearch, fetchData, locat
           placeholder="Ingresa una ciudad"
           onChange={handleSearch}
           onKeyDown={handleKeyDown}
+          value={locationSearch ?? ''}
         />
         <IoSearchOutline
           onClick={() => fetchData(locationSearch ?? '')}
           size={25}
-          className="absolute lg:right-4 right-0 cursor-pointer"
+          className="absolute lg:right-12 right-0 cursor-pointer"
         />
-
+        <MdDelete onClick={resetSearch} className="absolute lg:right-4 cursor-pointer " size={25} />
       </div>
     </nav>
   );
