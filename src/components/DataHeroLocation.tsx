@@ -1,7 +1,8 @@
 import React from 'react'
 import { WeatherDataResponse } from '../types/types'
 
-const DataHeroLocation: React.FC<{ dataFetch: WeatherDataResponse }> = ({ dataFetch }) => {
+const DataHeroLocation: React.FC<{ dataFetch?: WeatherDataResponse }> = ({ dataFetch }) => {
+
     return (
         <section className='bg-slate-800 p-5 rounded-2xl'>
             {
