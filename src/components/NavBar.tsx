@@ -29,7 +29,7 @@ const NavBar: React.FC<NavBarProps> = ({ props: { handleSearch, fetchData, locat
           size={25}
           className="absolute lg:right-12 right-0 cursor-pointer"
         />
-        <MdDelete onClick={resetSearch} className="absolute lg:right-4 cursor-pointer " size={25} />
+        <MdDelete onClick={resetSearch} className="absolute lg:right-4 right-5 cursor-pointer " size={25} />
       </div>
     </nav>
   );

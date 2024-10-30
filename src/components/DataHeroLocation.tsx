@@ -13,7 +13,7 @@ const DataHeroLocation: React.FC<{ dataFetch?: WeatherDataResponse }> = ({ dataF
                 type: "spring",
                 stiffness: 860,
                 damping: 50
-            }} className='bg-[rgba(120,148,185,0.5)] p-5 rounded-2xl lg:w-[50%] flex flex-col items-center justify-center backdrop-blur-sm'>
+            }} className='bg-[rgba(120,148,185,0.5)] p-5 rounded-2xl lg:w-[50%] flex flex-col items-center justify-center backdrop-blur-sm overflow-y-scroll lg:overflow-y-auto'>
             {dataFetch ? (
                 dataFetch.error ? (
                     <p className='text-red-400 font-bold text-[20px]'>Error! No se encontró una ciudad con ese nombre.</p>
@@ -34,7 +34,7 @@ const DataHeroLocation: React.FC<{ dataFetch?: WeatherDataResponse }> = ({ dataF
                             <p className='border-b'><span className="font-bold">Velocidad del viento:</span> {dataFetch.current.wind_kph} km/h</p>
                             <p className='border-b'><span className="font-bold">UV:</span> {dataFetch.current.uv}</p>
                             <figure className='flex justify-center'>
-                                <img src={dataFetch.current.condition.icon} className='w-32' alt={`Ícono del clima: ${dataFetch.current.condition.text}`} />
+                                <img src={dataFetch.current.condition.icon} className='lg:w-32' alt={`Ícono del clima: ${dataFetch.current.condition.text}`} />
                             </figure>
                         </div>
 
