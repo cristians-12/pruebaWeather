@@ -1,10 +1,11 @@
 import React from 'react'
 import { WeatherDataResponse } from '../types/types'
+import MapComponent from './MapComponent';
 
 const DataHeroLocation: React.FC<{ dataFetch?: WeatherDataResponse }> = ({ dataFetch }) => {
 
     return (
-        <section className='bg-[rgba(114,158,216,0.5)] p-5 rounded-2xl backdrop-blur-sm'>
+        <section className='bg-[rgba(114,158,216,0.5)] p-5 rounded-2xl lg:w-[50%] backdrop-blur-sm'>
             {dataFetch ? (
                 dataFetch.error ? (
                     <p className='text-red-700 font-bold'>Error! No se encontró una ciudad con ese nombre.</p>
@@ -20,9 +21,9 @@ const DataHeroLocation: React.FC<{ dataFetch?: WeatherDataResponse }> = ({ dataF
                             <p>Velocidad del viento: {dataFetch.current.wind_kph} km/h</p>
                             <figure>
                                 <img src={dataFetch.current.condition.icon} alt={`Ícono del clima: ${dataFetch.current.condition.text}`} />
-
                             </figure>
                         </div>
+                        
                     </div>
                 )
             ) : (

@@ -10,6 +10,8 @@ export interface LocationDataResponse {
   name: string;
   region: string;
   tz_id: string;
+  lat:number;
+  lon:number;
 }
 
 export interface WeatherDataResponse {

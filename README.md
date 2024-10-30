@@ -13,6 +13,8 @@ WeatherApp es una aplicación web que permite a los usuarios buscar y visualizar
 - [React Icons](https://react-icons.github.io/): Conjunto de iconos para mejorar la interfaz de usuario.
 - [Tailwind CSS](https://tailwindcss.com/): Framework CSS para diseño de estilos personalizados.
 - [TypeScript](https://www.typescriptlang.org/): Para un desarrollo más seguro y escalable.
+- [LeafLet](https://leafletjs.com): Para mostrar ubicacion del mapa haciendo uso de la latitud, longitud y nombre.
+
 
 ## Instalación
 1. Clona este repositorio:
