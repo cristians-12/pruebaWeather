@@ -1,10 +1,17 @@
 import React from 'react'
 import { WeatherDataResponse } from '../types/types'
+import { motion } from "framer-motion";
 
 const DataHeroLocation: React.FC<{ dataFetch?: WeatherDataResponse }> = ({ dataFetch }) => {
 
     return (
-        <section className='bg-[rgba(114,158,216,0.5)] p-5 rounded-2xl lg:w-[50%] flex flex-col items-center justify-center backdrop-blur-sm'>
+        <motion.section initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{
+                type: "spring",
+                stiffness: 860,
+                damping: 50
+            }} className='bg-[rgba(114,158,216,0.5)] p-5 rounded-2xl lg:w-[50%] flex flex-col items-center justify-center backdrop-blur-sm'>
             {dataFetch ? (
                 dataFetch.error ? (
                     <p className='text-red-700 font-bold'>Error! No se encontró una ciudad con ese nombre.</p>
@@ -28,7 +35,7 @@ const DataHeroLocation: React.FC<{ dataFetch?: WeatherDataResponse }> = ({ dataF
             ) : (
                 <p>No hay información de una ciudad que mostrar.</p>
             )}
-        </section>
+        </motion.section>
     )
 }
 

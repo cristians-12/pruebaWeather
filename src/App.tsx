@@ -19,7 +19,7 @@ const App = () => {
 
       <div className='lg:flex lg:w-[80%] lg:h-[60%]'>
         <DataHeroLocation dataFetch={dataFetch} />
-        {dataFetch ? <MapComponent lat={dataFetch.location.lat} lon={dataFetch.location.lon} city={dataFetch.location.name} /> : null}
+        {dataFetch ? <MapComponent lat={dataFetch.location.lat} lon={dataFetch.location.lon} city={dataFetch.location.name} /> : <div className='flex justify-center items-center w-[50%]'><p>No hay un mapa para mostrar.</p></div>}
       </div>
       <ToastContainer />
       <CurveSvg />
