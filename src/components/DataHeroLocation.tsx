@@ -13,10 +13,10 @@ const DataHeroLocation: React.FC<{ dataFetch?: WeatherDataResponse }> = ({ dataF
                 type: "spring",
                 stiffness: 860,
                 damping: 50
-            }} className='bg-[rgba(114,158,216,0.5)] p-5 rounded-2xl lg:w-[50%] flex flex-col items-center justify-center backdrop-blur-sm'>
+            }} className='bg-[rgba(120,148,185,0.5)] p-5 rounded-2xl lg:w-[50%] flex flex-col items-center justify-center backdrop-blur-sm'>
             {dataFetch ? (
                 dataFetch.error ? (
-                    <p className='text-red-700 font-bold'>Error! No se encontró una ciudad con ese nombre.</p>
+                    <p className='text-red-400 font-bold text-[20px]'>Error! No se encontró una ciudad con ese nombre.</p>
                 ) : (
                     <div className='lg:flex gap-20'>
 
