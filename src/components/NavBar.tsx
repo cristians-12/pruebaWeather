@@ -19,7 +19,7 @@ const NavBar: React.FC<NavBarProps> = ({ props: { handleSearch, fetchData, locat
       </figure>
       <div className="flex w-52 lg:w-auto items-center relative">
         <input
-          className="rounded-xl px-4 py-2"
+          className="rounded-xl px-4 py-2 text-black"
           type="text"
           placeholder="Ingresa una ciudad"
           onChange={handleSearch}
