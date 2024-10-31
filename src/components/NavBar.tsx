@@ -17,9 +17,9 @@ const NavBar: React.FC<NavBarProps> = ({ props: { handleSearch, fetchData, locat
         WeatherApp
         <CiCloudRainbow size={50} />
       </figure>
-      <div className="flex w-full lg:w-auto items-center relative">
+      <div className="flex w-full lg:w-[40%] items-center relative">
         <input
-          className="rounded-xl px-4 py-2 text-black bg-white"
+          className="rounded-xl w-full px-4 py-2 text-black bg-white"
           type="text"
           placeholder="Ingresa una ciudad"
           onChange={handleSearch}
@@ -29,10 +29,10 @@ const NavBar: React.FC<NavBarProps> = ({ props: { handleSearch, fetchData, locat
         <IoSearchOutline
           onClick={() => fetchData(locationSearch ?? '')}
           size={25}
-          className="absolute lg:right-12 right-0 cursor-pointer"
+          className="absolute lg:right-12 right-0 cursor-pointer bg-white"
           color="black"
         />
-        <MdDelete onClick={resetSearch} color="black" className="absolute lg:right-4 right-5 cursor-pointer " size={25} />
+        <MdDelete onClick={resetSearch} color="black" className="absolute lg:right-4 right-5 cursor-pointer bg-white" size={25} />
       </div>
     </nav>
   );
