@@ -14,7 +14,6 @@ const useFetch = () => {
         } else {
             const response = await fetch(`${apiUrl}&q=${location}&aqi=no`);
             const data = await response.json();
-            console.log(data);
             setDataFetch(data);
         }
 
