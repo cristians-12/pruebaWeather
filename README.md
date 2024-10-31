@@ -5,7 +5,7 @@ WeatherApp es una aplicación web que permite a los usuarios buscar y visualizar
 
 ## Características
 - **Búsqueda de ciudades**: Los usuarios pueden buscar información climática por nombre de ciudad.
-- **Visualización de datos**: Se muestran datos detallados, incluyendo temperatura, velocidad del viento, y condiciones climáticas.
+- **Visualización de datos**: Se muestran datos detallados, incluyendo temperatura, velocidad del viento, humedad, y condiciones climáticas.
 - **Diseño responsivo**: La interfaz está diseñada para funcionar en dispositivos móviles y de escritorio.
 
 ## Librerías utilizadas
