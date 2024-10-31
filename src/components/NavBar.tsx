@@ -17,9 +17,9 @@ const NavBar: React.FC<NavBarProps> = ({ props: { handleSearch, fetchData, locat
         WeatherApp
         <CiCloudRainbow size={50} />
       </figure>
-      <div className="flex w-52 lg:w-auto items-center relative">
+      <div className="flex w-full lg:w-auto items-center relative">
         <input
-          className="rounded-xl px-4 py-2 text-black"
+          className="rounded-xl px-4 py-2 text-black bg-white"
           type="text"
           placeholder="Ingresa una ciudad"
           onChange={handleSearch}
