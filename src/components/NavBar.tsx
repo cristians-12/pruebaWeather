@@ -29,10 +29,10 @@ const NavBar: React.FC<NavBarProps> = ({ props: { handleSearch, fetchData, locat
         <IoSearchOutline
           onClick={() => fetchData(locationSearch ?? '')}
           size={25}
-          className="absolute lg:right-12 right-0 cursor-pointer bg-white"
+          className="absolute lg:right-12 right-0 cursor-pointer "
           color="black"
         />
-        <MdDelete onClick={resetSearch} color="black" className="absolute lg:right-4 right-5 cursor-pointer bg-white" size={25} />
+        <MdDelete onClick={resetSearch} color="black" className="absolute lg:right-4 right-5 cursor-pointer" size={25} />
       </div>
     </nav>
   );

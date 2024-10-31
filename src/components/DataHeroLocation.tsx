@@ -30,9 +30,10 @@ const DataHeroLocation: React.FC<{ dataFetch?: WeatherDataResponse }> = ({ dataF
                             </div>
                         </div>
                         <div className='flex flex-col items-ce'>
-                            <p className='border-b lg:text-[30px]'><span className='font-bold text-[#00CBA9]'>Temperatura actual: </span>{dataFetch.current.temp_c}°C</p>
+                            <p className='border-b lg:text-[30px]'><span className='font-bold text-[#00CBA9]'>Temperatura: </span>{dataFetch.current.temp_c}°C</p>
                             <p className='border-b'><span className="font-bold">Velocidad del viento:</span> {dataFetch.current.wind_kph} km/h</p>
                             <p className='border-b'><span className="font-bold">UV:</span> {dataFetch.current.uv}</p>
+                            <p><span>Region:</span> {dataFetch.location.tz_id}</p>
                             <figure className='flex justify-center'>
                                 <img src={dataFetch.current.condition.icon} className='lg:w-20' alt={`Ícono del clima: ${dataFetch.current.condition.text}`} />
                             </figure>
