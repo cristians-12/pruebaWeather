@@ -4,6 +4,9 @@ export interface currentLocationDataResponse {
   condition: ConditionCurrentLocation;
   uv:number;
   is_day:number;
+  feelslike_c:number;
+  precip_mm:number;
+  humidity: number;
 }
 
 export interface LocationDataResponse {
